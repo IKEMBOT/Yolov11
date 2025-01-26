@@ -1,7 +1,7 @@
 import cv2
 from ultralytics import YOLO
 model = YOLO("yolo11n.pt")
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(2) #2 is index of the camera 
 while cap.isOpened():
     success, frame = cap.read()
     if success:
